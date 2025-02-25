@@ -1,23 +1,52 @@
- # Wikimedia Image Scraper
+# Wikimedia Indian Culture Image Scraper
 
-> A Python-based tool for downloading categorized images from Wikimedia Commons.
+> Python tool for downloading Indian dress and cuisine images using Wikimedia Commons API.
 
-## Available Scrapers
-- Indian Traditional Dresses
-- Indian Traditional Dishes
+## 🎯 Features
+- Multi-category image scraping (Dresses & Cuisine)
+- Smart search patterns and rate limiting
+- Progress tracking and error handling
+  
 
-## Usage
+## 📂 Project Structure
 ```bash
-# For dresses
-python src/dresses.py
-
-# For dishes
-python src/dishes.py
+wikimedia-scraper/
+├── src/
+│   ├── scraper.py    # Base scraper class
+│   ├── dresses.py    # Traditional dress scraper
+│   └── dishes.py     # Indian cuisine scraper
 ```
 
-## Features
-- Downloads high-quality images from Wikimedia Commons
-- Supports multiple categories (dresses, dishes)
-- Smart search patterns
-- Progress tracking
-- Error handling
+## 🔧 Setup & Usage
+```bash
+# Install
+pip install requests
+pip install beautifulsoup4
+
+# Run scrapers
+python src/dresses.py  # For dresses
+python src/dishes.py   # For cuisine
+```
+
+## 📑 Categories
+
+### 👗 Dresses
+- Traditional: Saree, Lehenga, Kurta
+- Wedding: Bridal wear, Groom's attire
+- Regional: South Indian, Punjabi, Rajasthani
+- Festival: Diwali, Garba, Eid
+- Modern: Indo-western, Designer wear
+
+### 🍱 Cuisine
+- Street Food: Chaat, Samosa, Vada Pav
+- Main Course: Butter Chicken, Biryani
+- South Indian: Dosa, Idli, Uttapam
+- Breads: Naan, Roti, Paratha
+- Desserts: Gulab Jamun, Rasgulla
+
+
+## 📄 License
+MIT License
+
+---
+Made for Indian cultural preservation | © 2025
