@@ -1,52 +1,104 @@
-# Wikimedia Indian Culture Image Scraper
+# Indian Traditional Dress Image Dataset
 
-> Python tool for downloading Indian dress and cuisine images using Wikimedia Commons API.
+> A comprehensive image collection and labeling system for Indian traditional dress research using Python.
 
-## 🎯 Features
-- Multi-category image scraping (Dresses & Cuisine)
-- Smart search patterns and rate limiting
-- Progress tracking and error handling
-  
-
-## 📂 Project Structure
-```bash
-wikimedia-scraper/
-├── src/
-│   ├── scraper.py    # Base scraper class
-│   ├── dresses.py    # Traditional dress scraper
-│   └── dishes.py     # Indian cuisine scraper
+## 📁 Project Structure
+```plaintext
+research/
+├── dresses1.py           # Image crawler script
+├── label_images.py       # Image labeling system
+├── indian_dresses/       # Downloaded images
+├── labeled_dresses/      # Labeled dataset
+└── dataset_metadata.json # Research metadata
 ```
 
-## 🔧 Setup & Usage
-```bash
-# Install
-pip install requests
-pip install beautifulsoup4
+## 🚀 Features
+- Automated image collection from Google Images
+- Hierarchical classification system
+- Research-grade metadata tracking
+- Expert-validated categorization
+- Cross-platform compatibility
 
-# Run scrapers
-python src/dresses.py  # For dresses
-python src/dishes.py   # For cuisine
+## 📋 Categories
+- **Traditional**: Classical Saree, Regional Saree
+- **Contemporary**: Modern Saree, Indo-Western
+- **Bridal**: Wedding Lehenga, Bridal Saree
+- **Ethnic**: Anarkali, Salwar Kameez
+- **Festival**: Festive Wear, Ceremonial Dress
+
+## 🛠️ Setup
+
+### Prerequisites
+```bash
+python -m venv venv
+.\venv\Scripts\activate
 ```
 
-## 📑 Categories
+### Install Dependencies
+```bash
+pip install icrawler Pillow
+```
 
-### 👗 Dresses
-- Traditional: Saree, Lehenga, Kurta
-- Wedding: Bridal wear, Groom's attire
-- Regional: South Indian, Punjabi, Rajasthani
-- Festival: Diwali, Garba, Eid
-- Modern: Indo-western, Designer wear
+## 📥 Image Collection
+```bash
+python dresses1.py
+```
+This will:
+- Create category-specific folders
+- Download 800 images across categories
+- Organize files automatically
 
-### 🍱 Cuisine
-- Street Food: Chaat, Samosa, Vada Pav
-- Main Course: Butter Chicken, Biryani
-- South Indian: Dosa, Idli, Uttapam
-- Breads: Naan, Roti, Paratha
-- Desserts: Gulab Jamun, Rasgulla
+## 🏷️ Image Labeling
+```bash
+python label_images.py
+```
+Features:
+- Visual labeling interface
+- Metadata tracking
+- Research documentation
+- Hierarchical classification
 
+## 📊 Dataset Statistics
+- Total Images: 800
+- Categories: 20
+- Format: JPG/PNG
+- Resolution: Various
+
+## 📝 Research Usage
+The dataset and labeling system are designed for:
+- Computer Vision Research
+- Fashion Classification
+- Cultural Pattern Recognition
+- Machine Learning Applications
+
+## 📚 Citation
+```bibtex
+@dataset{indian_dress_dataset,
+  title={Indian Traditional Dress Image Dataset},
+  year={2024},
+  author={Your Name},
+  institution={Your Institution}
+}
+```
+
+## 🔍 Metadata
+Generated `dataset_metadata.json` includes:
+- Image properties
+- Classification timestamps
+- Category hierarchies
+- Dataset statistics
 
 ## 📄 License
 MIT License
 
+## 🤝 Contributing
+1. Fork the repository
+2. Create feature branch
+3. Commit changes
+4. Submit pull request
+
+## 📧 Contact
+Your Name - your.email@domain.com
+
 ---
-Made for Indian cultural preservation | © 2025
+*This project is part of research work on Indian traditional dress classification.*
