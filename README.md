@@ -1,52 +1,48 @@
-# Wikimedia Indian Culture Image Scraper
+# Indian Traditional Dress Image Dataset Creator
 
-> Python tool for downloading Indian dress and cuisine images using Wikimedia Commons API.
+Multi-source image scraper for creating research-grade datasets of Indian traditional dresses.
 
-## 🎯 Features
-- Multi-category image scraping (Dresses & Cuisine)
-- Smart search patterns and rate limiting
-- Progress tracking and error handling
-  
+## Versions
 
-## 📂 Project Structure
+### Main Branch
+- Latest stable version
+- Multi-source scraping
+- Image validation
+- Detailed logging
+
+### Version 1 Branch
+- Basic Google Image scraping
+- Simple directory structure
+- Initial implementation
+
+### Version 2 Branch
+- Enhanced multi-source scraping
+- E-commerce site integration
+- Image validation
+- Progress tracking
+
+## Setup
 ```bash
-wikimedia-scraper/
-├── src/
-│   ├── scraper.py    # Base scraper class
-│   ├── dresses.py    # Traditional dress scraper
-│   └── dishes.py     # Indian cuisine scraper
+git clone <repository-url>
+cd indian-dress-scraper
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
-## 🔧 Setup & Usage
+## Usage
 ```bash
-# Install
-pip install requests
-pip install beautifulsoup4
-
-# Run scrapers
-python src/dresses.py  # For dresses
-python src/dishes.py   # For cuisine
+python dresses.py
 ```
 
-## 📑 Categories
+## Branch Selection
+```bash
+# For basic version
+git checkout version1
 
-### 👗 Dresses
-- Traditional: Saree, Lehenga, Kurta
-- Wedding: Bridal wear, Groom's attire
-- Regional: South Indian, Punjabi, Rajasthani
-- Festival: Diwali, Garba, Eid
-- Modern: Indo-western, Designer wear
+# For enhanced version
+git checkout version2
 
-### 🍱 Cuisine
-- Street Food: Chaat, Samosa, Vada Pav
-- Main Course: Butter Chicken, Biryani
-- South Indian: Dosa, Idli, Uttapam
-- Breads: Naan, Roti, Paratha
-- Desserts: Gulab Jamun, Rasgulla
-
-
-## 📄 License
-MIT License
-
----
-Made for Indian cultural preservation | © 2025
+# For latest version
+git checkout main
+```
